@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(29, 29, 82); 
+    padding: 0px;
+    margin: 0px;   
+} 
+.h{
+    color:white; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+} 
+button{
+    background-color: red; 
+    width: 50px;
+    height: 33px; 
+    border-color: none; 
+    border-radius: 10px;
+}
+input{
+    border-radius: 10px;
+    width: 300px; 
+    height: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+} 
+.ren{ 
+    flex-direction: column;
+    color:white; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
