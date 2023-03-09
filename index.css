@@ -1,8 +1,10 @@
-body{
-    background-color: rgb(29, 29, 82); 
+*{
     padding: 0px;
     margin: 0px;   
-} 
+}  
+body{
+    background-color: rgb(29, 29, 82); 
+}
 .h{
     color:white; 
     display: flex;
@@ -29,4 +31,10 @@ input{
     display: flex;
     align-items: center; 
     justify-content: center; 
+}
+.del{
+    text-decoration: line-through;
+}
+input.d{
+   margin: 0px!important;
 }

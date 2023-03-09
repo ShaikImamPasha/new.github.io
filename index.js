@@ -13,11 +13,14 @@ but.addEventListener("click",(e)=>{
     rend(re);
 }) 
 ren.addEventListener("click",(e)=>{
-    var id=e.target.dataset.key; 
-    var re=this.re.map((d)=> d.id===id ? {...d,isComplete: !isComplete} : d);
-    console.log(this.re);
-})
+    var id1=e.target.dataset.key;   
+    var bu=e.target.dataset.b; 
+    var re=this.re.map((d)=> d.id==id1?{...d,isComplete: !d.isComplete}:d); 
+    var re=this.re.filter((d)=> d.id!=bu); 
+    rend(re);
+}) 
+
 function rend(re){
-    ren.innerHTML=re.map(({id,data,isComplete})=> `<div><input id="${id}" data-key=${id} type="checkbox"><labal data-key=${id} for="${id}">${data}</labal>
-    <button>delete</button></div>`)
+    ren.innerHTML=re.map(({id,data,isComplete})=> `<div><input class="d" id="${id}" data-key=${id} type="checkbox"><labal data-key=${id} for="${id}" class=${isComplete?"del":""}>${data}</labal>
+    <button class="bu" data-b=${id}>delete</button></div>`)
 }
